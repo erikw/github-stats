@@ -1,17 +1,21 @@
 # [GitHub Stats Visualization](https://github.com/jstrieb/github-stats)
 
+<!--
+https://github.community/t/support-theme-context-for-images-in-light-vs-dark-mode/147981/84
+-->
 <a href="https://github.com/jstrieb/github-stats">
-
-![](https://github.com/jstrieb/github-stats/blob/master/generated/overview.svg)
-![](https://github.com/jstrieb/github-stats/blob/master/generated/languages.svg)
-
+<img src="https://github.com/jstrieb/github-stats/blob/master/generated/overview.svg#gh-dark-mode-only" />
+<img src="https://github.com/jstrieb/github-stats/blob/master/generated/languages.svg#gh-dark-mode-only" />
+<img src="https://github.com/jstrieb/github-stats/blob/master/generated/overview.svg#gh-light-mode-only" />
+<img src="https://github.com/jstrieb/github-stats/blob/master/generated/languages.svg#gh-light-mode-only" />
 </a>
 
 Generate visualizations of GitHub user and repository statistics using GitHub
-Actions.
+Actions. Visualizations can be set to include data for private repositories,
+and repositories you have contributed to, but do not own.
 
-This project is currently a work-in-progress; there will always be more
-interesting stats to display.
+Generated images automatically switch between GitHub light theme and GitHub
+dark theme.
 
 ## Background
 
@@ -101,10 +105,12 @@ For more information on inaccuracies, see issue
    lines of code into your markdown content. Change the `username` value to your GitHub 
    username.
    ```md
-   ![](https://github.com/username/github-stats/blob/master/generated/overview.svg)
+   ![](https://github.com/username/github-stats/blob/master/generated/overview.svg#gh-dark-mode-only)
+   ![](https://github.com/username/github-stats/blob/master/generated/overview.svg#gh-light-mode-only)
    ```
    ```md
-   ![](https://github.com/username/github-stats/blob/master/generated/languages.svg)
+   ![](https://github.com/username/github-stats/blob/master/generated/languages.svg#gh-dark-mode-only)
+   ![](https://github.com/username/github-stats/blob/master/generated/languages.svg#gh-light-mode-only)
    ```
 9. Link back to this repository so that others can generate their own
    statistics images.
